@@ -13,6 +13,7 @@ import modelo.LazoVerdad;
 import modelo.Londres;
 import modelo.Lugar;
 import modelo.ObjetoEspecial;
+import modelo.Personaje;
 import modelo.Soldado;
 import modelo.SteveTrevor;
 import modelo.Themyscira;
@@ -87,8 +88,8 @@ public class ControladorJuego {
         sb.append("Lugar: ").append(lugar.getNombre()).append("\n");
         sb.append("Descripción: ").append(lugar.getDescripcion()).append("\n\n");
         sb.append("Personajes:\n");
-        for (int i = 0; i < lugar.getPersonajes().size(); i++) {
-            sb.append("- ").append(lugar.getPersonajes().get(i).getNombre()).append("\n");
+        for (Personaje personaje : lugar.getPersonajes()) {
+            sb.append("- ").append(personaje.getNombre()).append("\n");
         }
         return sb.toString();
     }

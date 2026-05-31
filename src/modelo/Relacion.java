@@ -24,7 +24,15 @@ public class Relacion {
         return personaje1;
     }
 
+    public void setPersonaje1(Personaje personaje1) {
+        this.personaje1 = personaje1;
+    }
+
     public Personaje getPersonaje2() {
         return personaje2;
+    }
+
+    public void setPersonaje2(Personaje personaje2) {
+        this.personaje2 = personaje2;
     }
 }

@@ -167,22 +167,22 @@ public class VistaJuego extends javax.swing.JFrame {
 
     public void cargarLugares(ArrayList<Lugar> lugares) {
         cmbLugar.removeAllItems();
-        for (int i = 0; i < lugares.size(); i++) {
-            cmbLugar.addItem(lugares.get(i).getNombre());
+        for (Lugar lugar : lugares) {
+            cmbLugar.addItem(lugar.getNombre());
         }
     }
 
     public void cargarHabilidades(ArrayList<Habilidad> habilidades) {
         cmbHabilidades.removeAllItems();
-        for (int i = 0; i < habilidades.size(); i++) {
-            cmbHabilidades.addItem(habilidades.get(i).getNombre());
+        for (Habilidad habilidad : habilidades) {
+            cmbHabilidades.addItem(habilidad.getNombre());
         }
     }
 
     public void cargarEquipo(ArrayList<ObjetoEspecial> equipo) {
         cmbEquipo.removeAllItems();
-        for (int i = 0; i < equipo.size(); i++) {
-            cmbEquipo.addItem(equipo.get(i).getNombre());
+        for (ObjetoEspecial objetoEspecial : equipo) {
+            cmbEquipo.addItem(objetoEspecial.getNombre());
         }
     }
 
